@@ -7,8 +7,17 @@ android {
     namespace 'com.arpantyagi.wearplayground'
     compileSdk 33
 
+    signingConfigs {
+        debug {
+            storeFile file('../debug.keystore')
+            storePassword 'android'
+            keyAlias 'key0'
+            keyPassword 'android'
+        }
+    }
+
     defaultConfig {
-        applicationId "com.arpantyagi.wearplayground"
+        applicationId "com.arpantyagi.playground"
         minSdk 30
         targetSdk 33
         versionCode 1
@@ -20,9 +29,8 @@ android {
     }
 
     buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        debug {
+            signingConfig signingConfigs.debug
         }
     }
     compileOptions {
@@ -69,4 +77,5 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
+    implementation "androidx.wear:wear-remote-interactions:1.0.0"
 }
