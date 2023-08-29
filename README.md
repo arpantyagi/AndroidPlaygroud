@@ -1,4 +1,4 @@
-# Replicatint the phone vibration on Pixel Watch notification action bug
+# Replicating the phone vibration on Pixel Watch notification action bug
 
 ### This Repository containts a mobile app and a wearOS application. The mobile app generates local notification which are then bridged to the wear app.
 
