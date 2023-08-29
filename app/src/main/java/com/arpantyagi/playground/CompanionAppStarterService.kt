@@ -9,6 +9,7 @@ import androidx.wear.remote.interactions.RemoteActivityHelper
 class CompanionAppStarterService: Service() {
 
     override fun onBind(p0: Intent?): IBinder? {
+        println("I am here")
         return null
     }
 

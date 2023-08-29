@@ -15,7 +15,7 @@ class LaunchListenerService : WearableListenerService() {
 
         if(messageEvent.path == WEAR_APP_URI) {
             println("Received Message")
-            val intent = Intent(this, ResultActivity::class.java).apply {
+            val intent = Intent(this, MainActivity::class.java).apply {
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
             startActivity(intent)
