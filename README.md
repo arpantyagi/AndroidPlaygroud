@@ -1,3 +1,3 @@
-# POC
+# Experiments with Bridged Notification
 
-- POC to verify if we can navigation to a specific screen on the watch from an action provided on the  WearOS Extended Notification received from the phone.
+- This Repository containts a mobile app and a wearOs application. The mobile app generates local notification which are then bridged to the wear app. 
